@@ -1,4 +1,4 @@
-# DOSES: Data Overwrite & Sanitization Enterprise System
+# DOSES: Data Overwrite & Sanitization Enterprise System.
 ### A Military-Grade Hardware Media Sanitization, Post-Quantum Cryptographic Attestation & Enterprise ITAM Fabric
 
 **Academic Classification:** Major Project / Capstone Research Deliverable  
