@@ -1,0 +1,17 @@
+// ==============================================================================
+// SALESFORCE OBJECT QUERY LANGUAGE (SOQL) - HARDWARE DECOMMISSION AUDIT
+// Targets Enterprise Asset, WorkOrder & Case relationships
+// ==============================================================================
+
+SELECT 
+    Id, 
+    Name, 
+    SerialNumber, 
+    Status, 
+    InstallDate, 
+    UsageEndDate,
+    Description,
+    (SELECT Id, CaseNumber, Subject, Status, ClosedDate FROM Cases WHERE Status = 'Closed' ORDER BY CreatedDate DESC LIMIT 1)
+FROM Asset 
+WHERE SerialNumber IN ('S5G2NE0M123456K', 'AA010928374659281729')
+LIMIT 100
